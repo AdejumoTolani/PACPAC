@@ -4,7 +4,7 @@ const serverless = require('serverless-http')
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const cors = require("cors");
-const LeaderBoard = require("../netlify/functions/Models/Leaderboard");
+const LeaderBoard = require("./Models/Leaderboard");
 const app = express();
 const router = Router();
 
