@@ -1,0 +1,139 @@
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  height: 580px;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+.board div {
+  width: 20px;
+  height: 20px;
+}
+.wall {
+  background-color: wheat;
+}
+.pellet {
+  background-color: black;
+  border: 8px solid white;
+  box-sizing: border-box;
+}
+.ghost-home {
+  background-color: white;
+}
+.pac-man {
+  background-color: red;
+  border-radius: 50%;
+}
+.eaten {
+  background-color: rgb(117, 96, 96);
+}
+.Issy,
+.Deborah,
+.Temitope,
+.Francis {
+  background-color: rgb(161, 212, 161);
+  border: 0px;
+}
+.controls {
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 120px;
+  width: 120px;
+  gap: 10px;
+}
+.left {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.up {
+  grid-column: 2/3;
+}
+.right {
+  grid-row: 2/3;
+  grid-column: 3/4;
+}
+.down {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+.outside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.start {
+  width: 300px;
+  height: 400px;
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h4 {
+  text-decoration: underline;
+}
+.begin {
+  padding: 1rem 2rem;
+  color: blue;
+  font-size: larger;
+  border: 1px solid blue;
+}
+.popup, .leaderboard {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+.popup-content, .boardContent {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+#restartButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* .leaderboard{
+  display: none;
+  position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+} */
+a{
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  .board {
+    width: 240px;
+    height: 232px;
+  }
+  .board div {
+    width: 8px;
+    height: 8px;
+  }
+  .pellet {
+    border: 2px solid white;
+  }
+}

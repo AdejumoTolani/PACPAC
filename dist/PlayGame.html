@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pac-man Attempt</title>
+</head>
+<body>
+    <div class="board"></div>
+    <div class="controls">
+        <button class="left">L</button>
+        <button class="up">U</button>
+        <button class="right">R</button>
+        <button class="down">D</button>
+    </div>
+     <div id="popup" class="popup">
+        <div class="popup-content">
+            <h2>Game Over</h2>
+            <p>You lost the game!</p>
+            <p class="time">Time: </p>
+            <a class="fetchLeaderboard">View leaderboard</a>
+            <button id="restartButton">Restart</button>
+        </div>
+    </div>
+    <div id="popupWin" class="popup">
+        <div class="popup-content">
+            <h2>Nice.</h2>
+            <p>You won the game!</p>
+            <p class="time2">Time: </p>
+            <a class="fetchLeaderboard">View leaderboard</a>
+            <button id="restartButton">Restart</button>
+        </div>
+    </div>
+    <div class="leaderboard">
+    <table class="boardContent">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+        <tbody id="leaderboardBody">
+            <!-- Rows will be added dynamically here -->
+        </tbody>
+    </table>
+</div>
+
+    <p class="clock"> </p>
+    <script src="./script.js"></script>
+</body>
+</html>
